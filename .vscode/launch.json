@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Accounting App",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/accounting/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src/accounting",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Debug Accounting App (with inspector)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/accounting/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src/accounting",
+      "runtimeArgs": [
+        "--inspect-brk"
+      ],
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ],
+  "compounds": []
+}
