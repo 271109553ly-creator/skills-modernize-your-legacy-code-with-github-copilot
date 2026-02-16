@@ -1,0 +1,38 @@
+{
+  "name": "student-account-management",
+  "version": "2.0.0",
+  "description": "Student Account Management System - Modernized from COBOL to Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "accounting",
+    "student-accounts",
+    "legacy-modernization"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "testMatch": ["**/?(*.)+(spec|test).js"],
+    "collectCoverageFrom": [
+      "index.js"
+    ]
+  }
+}
